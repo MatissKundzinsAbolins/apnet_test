@@ -9,10 +9,10 @@ namespace AppNet.DataAccess
     class PersonDbContext : DbContext // = Database
     { 
         public DbSet<Person> People { get; set; } // = table
-
+        public DbSet<Address> Addresses { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqlocaldb;Initial Catalog=PersonTestDb;Integrated Security = True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Initial Catalog=PersonTestDb;Integrated Security = True;");
         }
     }
 }

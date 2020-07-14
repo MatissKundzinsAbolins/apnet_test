@@ -16,7 +16,7 @@ namespace AppNet.Controllers
             person.Surname = "Kundziņš-Āboliņš";
             person.Email = "matisskundzins.abolins@gmail.com";
             person.Age = 22;
-            person.Address = " Nav";
+            person.Address = "tests";
             person.IsMale = true;
 
             return View(person);
