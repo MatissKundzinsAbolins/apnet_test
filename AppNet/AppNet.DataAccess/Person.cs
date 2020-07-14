@@ -1,0 +1,16 @@
+﻿using System;
+using System.Dynamic;
+
+namespace AppNet.DataAccess
+{
+    public class Class1
+    {
+        public int Id {get; set;}
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Email { get; set; }
+        public int Age { get; set; }
+        public string Address { get; set; }
+        public bool IsMale { get; set; }
+    }
+}
